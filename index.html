@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <body style="background: #61dafb; display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <button style="font-size: 2em;" onclick="openFileDialog()">Open .sh File</button>
+
+    <script>
+      function openFileDialog() {
+        require('electron').ipcRenderer.send('open-file-dialog')
+      }
+    </script>
+  </body>
+</html>
