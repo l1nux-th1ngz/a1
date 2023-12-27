@@ -1,0 +1,9 @@
+#install use yay or paru or what you prefer 
+sudo pacman -S nodejs npm
+sudo npm install -g electron
+
+
+mkdir sh-manager
+cd sh-manager
+npm init -y
+npm install electron --save-dev
